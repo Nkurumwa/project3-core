@@ -1,0 +1,30 @@
+{% extends 'base.html'%}
+{% import 'bootstrap/wtf.html' as wtf%}
+
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+<div class="container-fluid" >
+    <div class="disp">
+            <img src="../static/img4.jpg" height="200px", width="300px"> 
+            <h3 style="padding-left:100px"%> DROP A COMMENT</h3> 
+    </div> <hr>
+    
+    <div class="cont">
+        <div class="row"  style="padding-left:5%">
+            <div class="col-md-2"> </div>
+            <div class="col-md-4">
+            
+            {{wtf.quick_form(forms)}}
+            
+            </div> 
+            <div class="col-md-6" style="padding-left:5%" >
+                <h4 style="color:white"> Your comment</h4> 
+                {%for comment in comments%}
+                    {{comment.comment}}
+                {% endfor %}
+            </div> <br>
+        </div>
+    </div>
+</div>
+
+{% endblock%}
