@@ -29,8 +29,9 @@ def create_app(config_name):
     from .requests import configure_request
     configure_request(app)
     
-    # Initializing flask extensions
+     #Initializing Flask Extensions
     bootstrap.init_app(app)
     db.init_app(app)
+    login_manager.init_app(app)
 
     return app
