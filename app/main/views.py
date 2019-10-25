@@ -12,7 +12,8 @@ def index():
    '''
    View root page function that returns the index page and its data
    '''
-   pitches = Pitch.query.filter_by().first()
+   pitches = Pitch.query.filter_by().all()
+   title = 'Home'
    job = Pitch.query.filter_by(category="Job")
    sports = Pitch.query.filter_by(category = "Sports")
    technology = Pitch.query.filter_by(category = "Technology")
