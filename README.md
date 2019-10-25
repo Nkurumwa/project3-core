@@ -16,11 +16,9 @@ This is a flask project that people can login, sign up, like, dislike and commen
 BDD
 
 ## Development Installation
-To get the code..
-
-
 python3.6 manage.py server
-Testing the application
+
+## Testing the application
 python3.6 manage.py test
 Open the application on your browser 127.0.0.1:5000.
 
@@ -28,7 +26,7 @@ Open the application on your browser 127.0.0.1:5000.
 Python3.6
 Flask
 Heroku
-##Known Bugs
+Known Bugs
 There are no known bugs currently.
 ## Contact Information
  nkurumwa51@gmail.com
